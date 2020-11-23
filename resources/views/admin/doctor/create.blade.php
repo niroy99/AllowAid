@@ -7,7 +7,7 @@
                                         <i class="ik ik-edit bg-blue"></i>
                                         <div class="d-inline">
                                             <h5>Doctors</h5>
-                                            <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                            <span>add doctor</span>
                                         </div>
                                     </div>
                                 </div>
@@ -26,16 +26,21 @@
                         </div>
                         <div class ="row justify-content-center">
                             <div class = "col-lg-10" > 
+                            @if(Session::has('message'))
+                            <div class = "alert alert-success">
+                            {{Session::get('message')}}
+                            </div>
+                            @endif
                                 <div class ="card">
                                     <div class = "card-header"><h3>Add doctor</h3></div>
                                     <div class ="card-body">
-                                    <form class="forms-sample" action ="{{route('doctor.store')}}"method="post" entype="multipart/form-data">@csrf
+                                    <form class="forms-sample" action ="{{route('doctor.store')}}" method="post" enctype="multipart/form-data" > @csrf
                                     <div class = "row">
                                         <div class= "col-lg-6">
                                             <label for="">Fullname</label>
                                             <input type="text" name= "name" class =" form-control
                                             @error('name') is-invalid @enderror"
-                                            placeholder = "doctor's name">
+                                            placeholder = "doctor's name" value ="{{old('name')}}">
                                             @error('name')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -46,7 +51,7 @@
                                             <label for="">Email</label>
                                             <input type="email" name= "email" class =" form-control
                                             @error('email') is-invalid @enderror"
-                                            placeholder = "email">
+                                            placeholder = "email" value ="{{old('email')}}>
                                             @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -89,7 +94,7 @@
                                             <label for="">Education</label>
                                             <input type="text" name= "education" class =" form-control
                                             @error('education') is-invalid @enderror"
-                                            placeholder = "doctor's education">
+                                            placeholder = "doctor's education" value ="{{old('education')}}>
                                             @error('education')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -100,7 +105,7 @@
                                             <label for="">Address</label>
                                             <input type="text" name= "address" class =" form-control
                                             @error('address') is-invalid @enderror"
-                                            placeholder = "doctor's address">
+                                            placeholder = "doctor's address" value ="{{old('address')}}>
                                             @error('address')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -114,7 +119,7 @@
                                             <label for="">Specialist</label>
                                             <input type="text" name= "department" class =" form-control
                                             @error('department') is-invalid @enderror"
-                                            placeholder = "doctor's speciality">
+                                            placeholder = "doctor's speciality"value ="{{old('department')}}>
                                             @error('department')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -125,7 +130,7 @@
                                             <label for="">Phone Number</label>
                                             <input type="text" name= "phone_number" class =" form-control
                                             @error('phone_number') is-invalid @enderror"
-                                            placeholder = "doctor's phone">
+                                            placeholder = "doctor's phone"value ="{{old('phone_number')}}>
                                             @error('phone_number')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -175,7 +180,7 @@
                                     <div class="form-group">
                                         <label for="exampleTextarea1">About</label>
                                         <textarea class="form-control" id="exampleTextarea1" rows="4"
-                                        name="description"></textarea>
+                                        name="description">{{old('description')}}</textarea>
                                         @error('description')
                                             <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

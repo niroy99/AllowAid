@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Models\User;
 class DoctorController extends Controller
 {
     /**
@@ -13,9 +13,12 @@ class DoctorController extends Controller
      */
     public function index()
     {
-    return "Nila";
-        // $users  = User::where('role_id','!=',3)->get();
-        // return view('admin.doctor.index',compact('users'));
+    // return "Nila";
+    //dd(\Auth::user()->role-name);   
+        $users  = User::where('role_id','!=',3)->get();
+        return view('admin.doctor.index',compact('users'));
+        // $users = User::get();
+        // return view('admin.doctor.index', compact('users'));
     }
 
     /**
@@ -37,22 +40,25 @@ class DoctorController extends Controller
     public function store(Request $request)
     {
         $this->validateStore($request);
-        $data = $request->all();
-        $name = (new User)->userAvatar($request);
+        // $data = $request->all();
+        // $name = (new User)->userAvatar($request);
 
+        // $data['image'] = $name;
+        // $data['password'] = bcrypt($request->password);
+        // User::create($data);
+
+        
+        $data = $request->all();
+        $image=$request->file('image');
+         $name=$image->hashName();
+        
+        $destination=public_path('/images');
+        $image->move($destination,$name);
         $data['image'] = $name;
         $data['password'] = bcrypt($request->password);
         User::create($data);
-
         return redirect()->back()->with('message','Doctor added successfully');
-
-       
-    
-    
-    
-   
-
-        
+  
     }
 
     /**
@@ -138,7 +144,7 @@ class DoctorController extends Controller
             'address'=>'required',
             'department'=>'required',
             'phone_number'=>'required|numeric',
-            'image'=>'required|mimes:jpeg,jpg,png',
+            'image'=>'required',
             'role_id'=>'required',
             'description'=>'required'
 
@@ -147,14 +153,14 @@ class DoctorController extends Controller
     public function validateUpdate($request,$id){
         return  $this->validate($request,[
             'name'=>'required',
-            'email'=>'required|unique:users,email,'.$id,
-          
+            'email'=>'required|unique:users',
+            'password'=>'required|min:6|max:25',
             'gender'=>'required',
             'education'=>'required',
             'address'=>'required',
             'department'=>'required',
             'phone_number'=>'required|numeric',
-            'image'=>'mimes:jpeg,jpg,png',
+            'image'=>'required|mimes:jpeg,jpg,png',
             'role_id'=>'required',
             'description'=>'required'
 

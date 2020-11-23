@@ -11,6 +11,10 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- datepicker -->
+    
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,9 +22,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('template/dist/css/theme.min.css')}}">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
-<body>
-    <div id="app">
+<body >
+    <div id="app" class = "main-img">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -79,5 +86,46 @@
             @yield('content')
         </main>
     </div>
+
+    <script>
+    var dateToday = new Date();
+  $( function() {
+    $("#datepicker").datepicker({
+        dateFormat:"yy-mm-dd",
+        showButtonPanel:true,
+        numberOfMonths:2,
+        minDate:dateToday,
+    });
+});
+
+  </script>  
+  <style type="text/css">
+   .ui-corner-all{
+        background: red;
+        color: #fff;
+
+    }
+    label.btn{
+        padding:0;
+    }
+    label.btn.input{
+        opacity:0;
+        position: absolute;
+    }
+    label.btm.span{
+        text-align:center;
+        padding:6px 12px;
+        display:block;
+        min-width:80px;
+    }
+    label.btn input:checked+span{
+        background-color: rgb(80,110,228); 
+        color: #fff;
+    }
+    .navbar{
+        background:#6610f2!important;
+        color: #fff!important;
+    }
+  </style>     
 </body>
 </html>

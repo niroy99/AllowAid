@@ -41,6 +41,8 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+
+
     /**
      * The attributes that should be cast to native types.
      *
@@ -49,4 +51,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function role(){
+        return $this->hasOne('App\Models\Role','id','role_id');
+    }
+
 }
