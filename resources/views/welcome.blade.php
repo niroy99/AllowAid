@@ -26,7 +26,7 @@
 <div class="card-deck">
     
     
-  <div class="card"  style=" height: 13rem; background-color: #879bad;>
+  <div class="card"  style=" height: 13rem; background-color: #667685;>
     <img class="card-img-top" src="/banner/login.png" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title" style = "color:#FFA500"> <strong>Step1:</strong>  </h5>
@@ -34,7 +34,7 @@
       
     </div>
   </div>
-  <div class="card"  style=" height: 13rem;background-color: #879bad;>
+  <div class="card"  style=" height: 13rem;background-color: #667685;>
     <img class="card-img-top" src="/banner/calender.jpg" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step2:</strong>  </h5>
@@ -42,7 +42,7 @@
       
     </div>
   </div>
-  <div class="card"  style=" height: 13rem; background-color: #879bad;>
+  <div class="card"  style=" height: 13rem; background-color: #667685;>
     <img class="card-img-top" src="/banner/mobile.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step3:</strong>  </h5>
@@ -50,7 +50,7 @@
      
     </div>
   </div>
-  <div class="card"  style=" height: 13rem;background-color: #879bad;>
+  <div class="card"  style=" height: 13rem;background-color: #667685;>
     <img class="card-img-top" src="/banner/happy.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step4:</strong>  </h5>

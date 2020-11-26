@@ -147,7 +147,7 @@
         color: #fff;
     }
     .navbar{
-        background:#6610f2!important;
+        background:#949494!important;
         color: #fff!important;
     }
   </style>     
