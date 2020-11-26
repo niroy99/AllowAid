@@ -78,7 +78,8 @@ body {
 }
 
 .main-img {
-    background: url('/banner/back2.jpg');
+    /* background: url('/banner/back2.jpg'); */
+    background-color:#336666;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +114,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color:white;
+  color:whitesmoke;
   text-align: justify;
   line-height: 200%;
  

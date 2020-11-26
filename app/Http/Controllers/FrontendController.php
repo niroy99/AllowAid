@@ -8,7 +8,7 @@ use App\Models\Time;
 use App\Models\User;
 use App\Models\Role;
 use App\Models\Booking;
-use App\Models\prescription;
+use App\Models\Prescription;
 use App\Mail\AppointmentMail;
 
 class FrontendController extends Controller

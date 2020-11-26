@@ -5,12 +5,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <img src="/banner/back1.jpeg" class="img-fluid" style="border:1px solid #ccc;">
+            <img src="/banner/back1.jpeg" class="img-fluid" style="border:2px solid #ccc;">
         </div>
         <div class="col-md-6">
-            <h2 style= "color:#FFA500 ;">Talk to us , We can help</h2>
-            <p style="font-size: 16px !important; ">When life comes to the hard part, it’s easy to feel overwhelmed, so  it’s good to know have someone to talk to. Whether it’s stress, anxiety, unexpected crisis, depression or sudden loss, AllowAid can help. Speak with a licensed therapist from the privacy and comfort of your own home. Don’t be alone, Let’s face it, AllowAid is here for you.
-            If you need someone to support you in facing life’s challenges, our carefully-vetted board-certified therapist are here to help. Get the care you need at a time and place that works for you. We offer comprehensive online mental health treatment options to meet all your needs. 
+            <h2 style= "color:#FFA500 ;"><strong>Talk to us , We can help</strong></h2>
+            <p style="font-size: 16px !important; "><br>When life comes to the hard part, it’s easy to feel overwhelmed, so  it’s good to know have someone to talk to. Whether it’s stress, anxiety, unexpected crisis, depression or sudden loss, AllowAid can help.<br>Speak with a licensed therapist from the privacy and comfort of your own home.<br> <strong>Don’t be alone, Let’s face it. AllowAid is here for you.</strong>
+             <br>
+            
             </p>
             <div class="mt-5">
                <a href="{{url('/register')}}"> <button class="btn btn-success">Sign up with us</button></a>
@@ -45,7 +46,7 @@
     <img class="card-img-top" src="/banner/mobile.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step3:</strong>  </h5>
-      <p class="card-text"style ="font-size: 16px !important; word-spacing: normal;">Receive a confirmation mail about date and way of communication (phone, whats up ,skype…).</p>
+      <p class="card-text"style ="font-size: 16px !important; word-spacing: normal;">Receive a confirmation mail about date and call.</p>
      
     </div>
   </div>
@@ -53,7 +54,7 @@
     <img class="card-img-top" src="/banner/happy.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step4:</strong>  </h5>
-      <p class="card-text" style ="font-size: 16px !important; word-spacing: normal; ">Start the therapy; begin the journey to be happier.</p>
+      <p class="card-text" style ="font-size: 16px !important; word-spacing: normal; ">Start the therapy and begin the journey to be happier.</p>
       
     </div>
   </div>
@@ -130,31 +131,36 @@
     </div>
 
     <!-- display Benifit -->
-    <div> <h3 style = "color:#FFA500"> <strong> Benifits of joining AllowAid</strong></h3></div>
+    <div> <h3 style = "color:#FFA500"> <strong> Benifits of joining Allowaid</strong></h3></div>
 
 <div class="card-deck">
     
     
   <div class="card"  style=" background-color: #879bad;">
-    <img class="card-img-top" src="/banner/dollar.JPG" alt="Card image cap">
+    <img class="card-img-top" src="/banner/nomoney.JPEG" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" style = "color:#FFA500"> <strong>Step1:</strong>  </h5>
-      <p class="card-text" style ="font-size: 14px !important; word-spacing: normal;">First of all allowaid is free.Visit a therapist via secure phone or video using your computer or smartphone. </p>
+      <h5 class="card-title" style = "color:#FFA500"> <strong>One:</strong>  </h5>
+      <p class="card-text" style ="font-size: 14px !important; word-spacing: normal;">First of all allowaid is free.
+      <br> Flexible plans to meet your needs and lifestyle. <br>
+     </p>
       
     </div>
   </div>
   <div class="card"  style=" background-color: #879bad;">
-    <img class="card-img-top" src="/banner/calender.JPG" alt="Card image cap">
+    <img class="card-img-top" src="/banner/booking1.JPG" alt="Card image cap">
     <div class="card-body">
-    <h5 class="card-title" style = "color:#FFA500"> <strong>Step2:</strong>  </h5>
-      <p class="card-text"style ="font-size: 14px !important;word-spacing: normal; ">It can take weeks to see a therapist for the first time; it takes only days with AllowAid. </p>
+    <h5 class="card-title" style = "color:#FFA500"> <strong>Two:</strong>  </h5>
+      <p class="card-text"style ="font-size: 14px !important;word-spacing: normal; ">
+      Eliminate commute time and scheduling hassle free. <br>
+      Visit a therapist via secure phone or video using your computer or smartphone.<br>
+    </p>
       
     </div>
   </div>
   <div class="card"  style=" background-color: #879bad;">
-    <img class="card-img-top" src="/banner/mobile.JPG" alt="Card image cap">
+    <img class="card-img-top" src="/banner/cell1.JPG" alt="Card image cap">
     <div class="card-body">
-    <h5 class="card-title" style = "color:#FFA500"> <strong>Step3:</strong>  </h5>
+    <h5 class="card-title" style = "color:#FFA500"> <strong>Three:</strong>  </h5>
       <p class="card-text"style ="font-size: 14px !important; word-spacing: normal;">You don’t have to fight traffic or worry about fitting an appointment into your day. </p>
      
     </div>
@@ -162,8 +168,8 @@
   <div class="card"  style="  background-color: #879bad;">
     <img class="card-img-top" src="/banner/happy.JPG" alt="Card image cap">
     <div class="card-body">
-    <h5 class="card-title" style = "color:#FFA500"> <strong>Step4:</strong>  </h5>
-      <p class="card-text" style ="font-size: 14px !important; word-spacing: normal; ">Eliminate commute time and scheduling hassles, Flexible plans to meet your needs and lifestyle,Switch between therapists without difficulty   </p>
+    <h5 class="card-title" style = "color:#FFA500"> <strong>Four:</strong>  </h5>
+      <p class="card-text" style ="font-size: 14px !important; word-spacing: normal; ">Be happy once again. </p>
       
     </div>
   </div>

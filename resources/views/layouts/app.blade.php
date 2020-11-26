@@ -32,7 +32,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}"style="color:white; ">
                 <!-- Logo Image -->
-                    <img src="/banner/allowaid.JPG" width="45" alt="" class="d-inline-block align-middle mr-2">
+                    <img src="/banner/logo.PNG" width="100" alt="" class="d-inline-block align-middle mr-2">
                 <!-- Logo Text -->
                     {{ config('app.name', 'Laravel') }}
                 </a>
