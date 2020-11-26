@@ -136,7 +136,7 @@
     
     
   <div class="card"  style=" background-color: #879bad;">
-    <img class="card-img-top" src="/banner/dollar.jpg" alt="Card image cap">
+    <img class="card-img-top" src="/banner/dollar.JPG" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title" style = "color:#FFA500"> <strong>Step1:</strong>  </h5>
       <p class="card-text" style ="font-size: 14px !important; word-spacing: normal;">First of all allowaid is free.Visit a therapist via secure phone or video using your computer or smartphone. </p>
