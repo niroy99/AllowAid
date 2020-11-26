@@ -158,7 +158,7 @@
     </div>
   </div>
   <div class="card"  style=" background-color: #879bad; width: 10rem;">
-    <img class="card-img-top" src="/banner/phone2.JPG" alt="Card image cap">
+    <img class="card-img-top" src="/banner/phone2.jpg" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Three:</strong>  </h5>
       <p class="card-text"style ="font-size: 14px !important; word-spacing: normal;">You don’t have to fight traffic or worry about fitting an appointment into your day. </p>
