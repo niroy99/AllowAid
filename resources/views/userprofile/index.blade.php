@@ -13,11 +13,11 @@
 
                 <div class="card-body">
                     <p>Name: {{auth()->user()->name}}</p>
-                    <p>Name: {{auth()->user()->email}}</p>
-                    <p>Name: {{auth()->user()->address}}</p>
-                    <p>Name: {{auth()->user()->phone_number}}</p>
-                    <p>Name: {{auth()->user()->gender}}</p>
-                    <p>Bio: {{auth()->user()->description}}</p>
+                    <p>Email: {{auth()->user()->email}}</p>
+                    <p>Address: {{auth()->user()->address}}</p>
+                    <p>Phone: {{auth()->user()->phone_number}}</p>
+                    <p>Gender: {{auth()->user()->gender}}</p>
+                    <p>Desc: {{auth()->user()->description}}</p>
 
                 </div>
             </div>
@@ -62,7 +62,7 @@
                                 @enderror
                        
                             <div class="form-group">
-                            <label>Bio</label>
+                            <label>Desc</label>
                             <textarea name="description" class="form-control">{{auth()->user()->description}}</textarea>
                             
                         </div>

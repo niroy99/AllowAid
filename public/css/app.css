@@ -78,12 +78,13 @@ body {
 }
 
 .main-img {
-    background: url('/banner/nature_blur1.jpg');
+    background: url('/banner/back2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
+    
    
    
 }
@@ -108,9 +109,15 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color:white;
+  text-align: justify;
+  line-height: 200%;
+ 
+ 
 }
 
 abbr[title],
@@ -408,7 +415,8 @@ h1,
 
 h2,
 .h2 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  color:	white;
   
 }
 
@@ -640,7 +648,7 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
   /* border: 1px solid rgba(68, 189, 163, 0.966); */
-  background-color: rgba(68, 189, 163, 0.52);
+  background-color:rgb(211,211,211)
   border-radius: 0.25rem;
 }
 
@@ -1008,6 +1016,7 @@ pre code {
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
+    
   }
 
   .col-sm-7 {
@@ -4956,7 +4965,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: rgba(68, 189, 163, 0.966);
+  background-color: rgb(211,211,211);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -8642,6 +8651,8 @@ button.bg-dark:focus {
 .pt-4,
 .py-4 {
   padding-top: 1.5rem !important;
+ 
+  */
 }
 
 .pr-4,

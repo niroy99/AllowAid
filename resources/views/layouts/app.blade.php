@@ -27,10 +27,13 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body >
-    <div id="app" class = "main-img">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div id="app" class = "main-img">  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm"style="background-color: #6C757D;" >
+      
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/') }}"style="color:white; ">
+                <!-- Logo Image -->
+                    <img src="/banner/allowaid.JPG" width="45" alt="" class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -46,6 +49,20 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        @if(auth()->check()&& auth()->user()->role->name === 'patient')
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('my.booking') }}" 
+                                style="color: #fff; font-size:16px; font-weight: bold;">{{ __('My Booking') }}</a>
+                            </li>
+                        @endif
+
+                        @if(auth()->check()&& auth()->user()->role->name === 'patient')
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('my.prescription') }}" 
+                                style="color: #fff; font-size:16px; font-weight: bold;">{{ __('My Prescription') }}</a>
+                            </li>
+                        @endif
+
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -60,18 +77,25 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                <a style="color: #fff; font-size:16px; font-weight: bold;"id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" 
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
+                                <!-- adding my profile -->
+                               
+                                    
+                                    <!-- adding logout button style -->
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-right" 
+                                aria-labelledby="navbarDropdown">
+                                <a href="{{url('userprofile')}}"  class="dropdown-item">profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
@@ -100,8 +124,8 @@
 
   </script>  
   <style type="text/css">
-   .ui-corner-all{
-        background: red;
+   .ui-corner-\\\\f{
+        background: #A0A0A0;
         color: #fff;
 
     }
@@ -119,7 +143,7 @@
         min-width:80px;
     }
     label.btn input:checked+span{
-        background-color: rgb(80,110,228); 
+        background-color: rgb(80,110,228);      
         color: #fff;
     }
     .navbar{
