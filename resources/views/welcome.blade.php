@@ -5,10 +5,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <img src="/banner/back1.jpeg" class="img-fluid" style="border:2px solid #ccc;">
+            <img src="/banner/back4.jpg" class="img-fluid" style="border:2px solid #ccc;">
         </div>
         <div class="col-md-6">
-            <h2 style= "color:#FFA500 ;"><strong>Talk to us , We can help</strong></h2>
+            <h2 style= "color:#ffb300 ;"><strong>Talk to us , We can help</strong></h2>
             <p style="font-size: 16px !important; "><br>When life comes to the hard part, it’s easy to feel overwhelmed, so  it’s good to know have someone to talk to. Whether it’s stress, anxiety, unexpected crisis, depression or sudden loss, AllowAid can help.<br>Speak with a licensed therapist from the privacy and comfort of your own home.<br> <strong>Don’t be alone, Let’s face it. AllowAid is here for you.</strong>
              <br>
             
@@ -21,12 +21,12 @@
     </div>
     <hr>
     <!-- display how it works -->
-    <div> <h3 style = "color:#fff"> <strong> How it Works </strong></h3></div>
+    <div> <h2 style = "color:#ffb300;" > <strong> How it Works </strong></h2></div>
 
 <div class="card-deck">
     
     
-  <div class="card"  style=" height: 13rem; background-color: #667685;>
+  <div class="card"  style=" height: 13rem; background-color: #003152;>
     <img class="card-img-top" src="/banner/login.png" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title" style = "color:#FFA500"> <strong>Step1:</strong>  </h5>
@@ -34,7 +34,7 @@
       
     </div>
   </div>
-  <div class="card"  style=" height: 13rem;background-color: #667685;>
+  <div class="card"  style=" height: 13rem;background-color: #003152;>
     <img class="card-img-top" src="/banner/calender.jpg" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step2:</strong>  </h5>
@@ -42,7 +42,7 @@
       
     </div>
   </div>
-  <div class="card"  style=" height: 13rem; background-color: #667685;>
+  <div class="card"  style=" height: 13rem; background-color: #003152;>
     <img class="card-img-top" src="/banner/mobile.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step3:</strong>  </h5>
@@ -50,7 +50,7 @@
      
     </div>
   </div>
-  <div class="card"  style=" height: 13rem;background-color: #667685;>
+  <div class="card"  style=" height: 13rem;background-color: #003152;>
     <img class="card-img-top" src="/banner/happy.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Step4:</strong>  </h5>
@@ -136,7 +136,7 @@
 <div class="card-deck">
     
     
-  <div class="card"  style=" background-color: #879bad; width: 10rem;" >
+  <div class="card"  style=" background-color: #003152; width: 10rem;" >
     <img class="card-img-top" src="/banner/nomoney.JPEG" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title" style = "color:#FFA500"> <strong>One:</strong>  </h5>
@@ -146,7 +146,7 @@
       
     </div>
   </div>
-  <div class="card"  style=" background-color: #879bad; width: 10rem;">
+  <div class="card"  style=" background-color: #003152; width: 10rem;">
     <img class="card-img-top" src="/banner/booking1.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Two:</strong>  </h5>
@@ -157,7 +157,7 @@
       
     </div>
   </div>
-  <div class="card"  style=" background-color: #879bad; width: 10rem;">
+  <div class="card"  style=" background-color: #003152; width: 10rem;">
     <img class="card-img-top" src="/banner/phone2.jpg" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Three:</strong>  </h5>
@@ -165,7 +165,7 @@
      
     </div>
   </div>
-  <div class="card"  style="  background-color: #879bad; width: 10rem;">
+  <div class="card"  style="  background-color: #003152; width: 10rem;">
     <img class="card-img-top" src="/banner/happy.JPG" alt="Card image cap">
     <div class="card-body">
     <h5 class="card-title" style = "color:#FFA500"> <strong>Four:</strong>  </h5>

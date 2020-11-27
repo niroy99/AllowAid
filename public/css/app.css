@@ -78,8 +78,8 @@ body {
 }
 
 .main-img {
-    /* background: url('/banner/back2.jpg'); */
-    background-color:#336666;
+    background: url('/banner/img_nature.jpg');
+    /* background-color:#336666; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
