@@ -66,7 +66,7 @@
 <form action="{{url('/')}}" method="GET">
     <div class="card" >
         <div class="card-body">
-            <div class="card-header">Find Expert</div>
+            <div class="card-header" style ="font-size:16px !important;">Select your date</div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-8">
@@ -88,7 +88,7 @@
     <!--display doctors-->
     <div class="card">
         <div class="card-body">
-            <div class="card-header"> Experts available </div>
+            <div class="card-header" style ="font-size:16px !important;" > Experts available </div>
             <div class="card-body">
                 <table class="table table-striped">
                     <thead>
